@@ -1,0 +1,36 @@
+/*package cn.ipays.beans;
+
+import java.util.List;
+
+import com.jfinal.plugin.activerecord.Model;
+import com.jfinal.plugin.ehcache.CacheKit;
+import com.jfinal.plugin.model.annotation.ModelAno;
+
+@SuppressWarnings("serial")
+@ModelAno(table= "EACODE")
+public class Eacode extends Model<Eacode>{
+	*//**
+	 * 
+	 *//*
+	public static final Eacode dao = new Eacode();
+	
+	*//**
+	 * 获取数据字典
+	 * @param 
+	 * @return EACODE
+	 * *//*
+	public List<Eacode> getEacodeAll() {
+		return this.find("SELECT * FROM EACODE where EDITMODE='1' and ENABLED='0'");
+	}
+	
+	*//**
+	 * 获取数据字典描述
+	 * @param  key：FIELD-CODE
+	 * @return CODEDESC
+	 * *//*
+	public String getCodedescByKey(String key) {
+		Object keyValue=CacheKit.get("SysEacode", key);
+		return keyValue.toString();
+	}
+}
+*/
