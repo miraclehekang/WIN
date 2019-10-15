@@ -1,0 +1,99 @@
+#############################################公共参数#################################################
+#网关地址
+Adapt.gateway.url=http://127.0.0.1
+#前置地址
+Adapt.gateway.url=http://127.0.0.1
+#IP白名单(多个请用','号分隔)
+ip.white.list=127.0.0.1,192.168.100.1,192.168.100.100
+#前置MD5校验key
+Adapt.md5Key=1234567890
+#前置所属平台代码
+Adapt.paymentId=10000076
+#基础包路径
+base.path=cn.ipays
+
+########################################功能开关#####################################
+#是否启动数据库连接
+config.conn=true
+#数据库类型(可选:mysql/sqllite)
+config.db.type=mysql
+#是否启动缓存
+config.chache=true
+#是否启动对内TCP监听
+config.tcp.server=false
+#是否开启定时任务
+config.timer=true
+#是否启用消息总线
+config.zbus=false
+#是否开启HTTP映射
+config.http=true
+
+#########################################功能参数####################################
+#数据库连接
+#jdbcUrl = jdbc:mysql://115.28.85.243:3306/bio?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+jdbcUrl = jdbc:mysql://192.168.1.31:3306/super_wallet?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+user = root
+password =123456
+devMode = true
+#配置对内监听端口
+Adapt.HandlerName=ServerHandler
+Adapt.port=19003
+#队列参数
+Adapt.zbus.host=192.168.10.10:15555
+#视图模板类型
+view.type=jsp
+#视图基地址
+view.basePath=WEB-INF/jsp
+#session失效时间
+cookie.time=30
+#本地地址
+local.host=http://test.lingyepro.com
+#jpress地址
+jpress.location=http://test.lingyepro.com
+
+
+##############################乐付通短信平台配置参数####################
+#上行地址
+msg.ipays.push.url=http://sms.i-pays.cn:8080/httpconnect
+#组织ID
+msg.ipays.orgid=1003
+#用户名
+msg.ipays.user=xatyj
+#用户密码
+msg.ipays.pwd=D473B6C9DC04FAFD
+#用户信息
+msg.ipays.msg=您的验证码为[1],有效期为5分钟，为了你的信息安全切勿泄露!
+#用户获取验证码总次数
+msg.ipays.count=3
+#短信失效时间
+msg.timeout = 5
+#同手机号码短信最多发送次数
+msg.maxlimit=10
+
+##############################微信 APPID  和  密钥 ####################
+##url
+Wx.ipays.appurl = https://api.weixin.qq.com
+##APPID
+Wx.ipays.appId = wx84d400298d2ffc4d
+#Wx.ipays.appId = wxb49ba8302eff1cb3
+##密钥
+Wx.ipays.secret = 57ae7ec02f89094fc7790c451f8f97f7
+#Wx.ipays.secret = 7c942dfa8d9b17b7c3c97b77dad65c52
+##Token
+Wx.ipays.token = 1a34742c388d93addbde1d33d04b1f11
+#Wx.ipays.token = 
+##主网站地址(基础地址)
+base.website = http://test.lingyepro.com
+##微信开放平台WEB请求地址
+Wx.web.open = https://open.weixin.qq.com
+
+############################钱包后端请求参数###########################
+wallet.branch.id=1000000001
+wallet.merch.area=test
+wallet.product.type=4
+wallet.reqUrl=http://127.0.0.1:8090/app
+# wallet.reqUrl=http://192.168.1.157:8090/app
+
+############################cryptocompare请求参数######################
+cryptocompare.reqUrl=https://www.cryptocompare.com
+cryptocompare.mini.reqUrl=https://min-api.cryptocompare.com
